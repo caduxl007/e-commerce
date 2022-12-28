@@ -1,13 +1,11 @@
-import { Button } from './components/Button';
-import { Header } from './components/Header';
-import { Product } from './components/Product';
+import { BrowserRouter } from 'react-router-dom';
+import { Router } from './Router';
 
 function App() {
   return (
-    <div>
-      <Header />
-      {/* <Product /> */}
-    </div>
+    <BrowserRouter>
+      <Router />
+    </BrowserRouter>
   );
 }
 
