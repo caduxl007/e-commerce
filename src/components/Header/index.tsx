@@ -5,7 +5,7 @@ import { InputText } from '../InputText';
 
 export function Header() {
   return (
-    <header className="max-w-[1280px] mx-auto flex items-center justify-between py-5 px-4">
+    <header className="mx-auto flex h-20 max-w-[1280px] items-center  justify-between px-4">
       <img src={logo} alt="" />
 
       <div className="flex items-center gap-7">

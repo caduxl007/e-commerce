@@ -13,8 +13,8 @@ export function Home() {
   }
 
   return (
-    <section>
-      <div className="mx-auto flex h-full max-w-[1280px] flex-col gap-3 py-5">
+    <>
+      <div className="mx-auto flex h-full max-w-[1280px] flex-col justify-between gap-3 py-5">
         <header className="flex justify-between">
           <div></div>
           <Pagination
@@ -34,16 +34,7 @@ export function Home() {
             />
           ))}
         </div>
-
-        <footer className="flex justify-between">
-          <div></div>
-          <Pagination
-            totalCount={data?.totalCount ?? 0}
-            pageSelected={page}
-            changePage={setPage}
-          />
-        </footer>
       </div>
-    </section>
+    </>
   );
 }

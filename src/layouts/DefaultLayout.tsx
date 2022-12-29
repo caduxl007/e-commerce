@@ -6,7 +6,7 @@ export function DefaultLayout() {
     <main>
       <Header />
 
-      <div className="bg-gray-500 px-4">
+      <div className="bg-gray-500 px-4 min-h-[calc(100vh-80px)]">
         <Outlet />
       </div>
     </main>
