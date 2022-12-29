@@ -1,0 +1,112 @@
+{
+  "products":[
+     {
+       "name":"Caneca de cerâmica rústica",
+       "description":"Uma breve descrição sobre o produto, apenas a fim de teste e mais nada!!",
+       "imageUrl":"https://storage.googleapis.com/xesque-dev/challenge-images/caneca-06.jpg",
+       "category":"mugs",
+       "id": 1,
+        "price": 1000,
+        "createdAt": "2022-07-29T19:36:44.505Z"
+     },
+     {
+        "name":"Camiseta not today.",
+        "description":"Uma breve descrição sobre o produto, apenas a fim de teste e mais nada!!",
+        "imageUrl":"https://storage.googleapis.com/xesque-dev/challenge-images/camiseta-05.jpg",
+        "category":"t-shirts",
+        "id": 2,
+        "price": 1000,
+        "createdAt": "2022-07-29T19:36:44.505Z"
+     },
+     {
+        "name":"Caneca Black Ring",
+        "description":"Uma breve descrição sobre o produto, apenas a fim de teste e mais nada!!",
+        "imageUrl":"https://storage.googleapis.com/xesque-dev/challenge-images/caneca-04.jpg",
+        "category":"mugs",
+        "id": 3,
+        "price": 1000,
+        "createdAt": "2022-07-29T19:36:44.505Z"
+     },
+     {
+        "name":"Camiseta Broken Saints",
+        "description":"Uma breve descrição sobre o produto, apenas a fim de teste e mais nada!!",
+        "imageUrl":"https://storage.googleapis.com/xesque-dev/challenge-images/camiseta-03.jpg",
+        "category":"t-shirts",
+        "id": 4,
+        "price": 1000,
+        "createdAt": "2022-07-29T19:36:44.505Z"
+     },
+     {
+        "name":"Camiseta Outcast",
+        "description":"Uma breve descrição sobre o produto, apenas a fim de teste e mais nada!!",
+        "imageUrl":"https://storage.googleapis.com/xesque-dev/challenge-images/camiseta-06.jpg",
+        "category":"t-shirts",
+        "id": 5,
+        "price": 1000,
+        "createdAt": "2022-07-29T19:36:44.505Z"
+     },
+     {
+        "name":"Caneca The Grounds",
+        "description":"Uma breve descrição sobre o produto, apenas a fim de teste e mais nada!!",
+        "imageUrl":"https://storage.googleapis.com/xesque-dev/challenge-images/caneca-05.jpg",
+        "category":"mugs",
+        "id": 6,
+        "price": 1000,
+        "createdAt": "2022-07-29T19:36:44.505Z"
+     },
+     {
+        "name":"Camiseta evening",
+        "description":"Uma breve descrição sobre o produto, apenas a fim de teste e mais nada!!",
+        "imageUrl":"https://storage.googleapis.com/xesque-dev/challenge-images/camiseta-02.jpg",
+        "category":"t-shirts",
+        "id": 7,
+        "price": 1000,
+        "createdAt": "2022-07-29T19:36:44.505Z"
+     },
+     {
+        "name":"Caneca preto fosco",
+        "description":"Uma breve descrição sobre o produto, apenas a fim de teste e mais nada!!",
+        "imageUrl":"https://storage.googleapis.com/xesque-dev/challenge-images/caneca-01.jpg",
+        "category":"mugs",
+        "id": 8,
+        "price": 1000,
+        "createdAt": "2022-07-29T19:36:44.505Z"
+     },
+     {
+        "name":"Caneca Never settle",
+        "description":"Uma breve descrição sobre o produto, apenas a fim de teste e mais nada!!",
+        "imageUrl":"https://storage.googleapis.com/xesque-dev/challenge-images/caneca-03.jpg",
+        "category":"mugs",
+        "id": 9,
+        "price": 1000,
+        "createdAt": "2022-07-29T19:36:44.505Z"
+     },
+     {
+        "name":"Camiseta DREAMER",
+        "description":"Uma breve descrição sobre o produto, apenas a fim de teste e mais nada!!",
+        "imageUrl":"https://storage.googleapis.com/xesque-dev/challenge-images/camiseta-01.jpg",
+        "category":"t-shirts",
+        "id": 10,
+        "price": 1000,
+        "createdAt": "2022-07-29T19:36:44.505Z"
+     },
+     {
+        "name":"Caneca Decaf! P&Co",
+        "description":"Uma breve descrição sobre o produto, apenas a fim de teste e mais nada!!",
+        "imageUrl":"https://storage.googleapis.com/xesque-dev/challenge-images/caneca-02.jpg",
+        "category":"mugs",
+        "id": 11,
+        "price": 1000,
+        "createdAt": "2022-07-29T19:36:44.505Z"
+     },
+     {
+        "name":"Camiseta Ramones",
+        "description":"Uma breve descrição sobre o produto, apenas a fim de teste e mais nada!!",
+        "imageUrl":"https://storage.googleapis.com/xesque-dev/challenge-images/camiseta-04.jpg",
+        "category":"t-shirts",
+        "id": 12,
+        "price": 1000,
+        "createdAt": "2022-07-29T19:36:44.505Z"
+     }
+  ]
+}
