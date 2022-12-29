@@ -15,7 +15,7 @@ export function Product({ imageUrl, name, price }: ProductProps) {
         alt=""
       />
 
-      <footer className="px-3 py-2">
+      <footer className="px-3 py-2 bg-white">
         <p>{name}</p>
 
         <div className="my-2 h-[1px] w-full bg-gray-300"></div>
