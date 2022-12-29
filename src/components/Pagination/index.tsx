@@ -1,4 +1,5 @@
 import { ButtonPaginate } from './ButtonPaginate';
+import { usePagination } from './hooks/usePagination';
 
 export interface PaginationProps {
   totalPages: number;
@@ -7,19 +8,17 @@ export interface PaginationProps {
 }
 
 export function Pagination({
-  totalPages = 1,
-  pageSelected = 1,
+  totalPages,
+  pageSelected,
   changePage,
 }: PaginationProps) {
+  const { onNext, onPrevious } = usePagination({
+    totalPages,
+    changePage,
+    pageSelected,
+  });
 
-  function onNext() {
-    changePage(pageSelected + 1);
-  }
-
-  function onPrevios() {
-    changePage(pageSelected + 1);
-  }
-
+  
   return (
     <div className="flex gap-1">
       {new Array(totalPages).fill('').map((_, index) => (
@@ -32,7 +31,7 @@ export function Pagination({
         </ButtonPaginate>
       ))}
 
-      <ButtonPaginate onClick={onPrevios}>{'<'}</ButtonPaginate>
+      <ButtonPaginate onClick={onPrevious}>{'<'}</ButtonPaginate>
       <ButtonPaginate onClick={onNext}>{'>'}</ButtonPaginate>
     </div>
   );
