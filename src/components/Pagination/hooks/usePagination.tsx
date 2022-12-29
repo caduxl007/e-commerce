@@ -1,17 +1,25 @@
+import { useMemo } from 'react';
+
 type UsePaginationProps = {
-  totalPages: number;
+  totalCount: number;
   pageSelected: number;
   changePage: (page: number) => void;
 };
 
 export function usePagination({
-  totalPages = 1,
+  totalCount = 1,
   pageSelected = 1,
   changePage,
 }: UsePaginationProps) {
+  const pages = useMemo(() => {
+    const limit = 10;
+
+    return Math.ceil(totalCount / limit);
+  }, [totalCount]);
+
   function onNext() {
     const nextPage = pageSelected + 1;
-    const page = nextPage > totalPages ? pageSelected : nextPage;
+    const page = nextPage > pages ? pageSelected : nextPage;
 
     changePage(page);
   }
@@ -25,6 +33,7 @@ export function usePagination({
 
   return {
     onNext,
-    onPrevious
+    onPrevious,
+    pages,
   };
 }
