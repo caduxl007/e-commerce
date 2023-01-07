@@ -1,5 +1,7 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Pagination, Product } from '../../components';
+import { Loading } from '../../components/Loading';
 import { useProducts } from '../../services/hooks/useProducts';
 
 export function Home() {
@@ -9,7 +11,7 @@ export function Home() {
   });
 
   if (isLoading) {
-    return <h1>...</h1>;
+    return <Loading />;
   }
 
   return (
@@ -26,12 +28,13 @@ export function Home() {
 
         <div className="grid grid-cols-4 gap-8">
           {data?.products.map((product) => (
-            <Product
-              key={product.id}
-              imageUrl={product.imageUrl}
-              name={product.name}
-              price={product.price}
-            />
+            <Link key={product.id} to={`products/${product.id}`}>
+              <Product
+                imageUrl={product.imageUrl}
+                name={product.name}
+                price={product.price}
+              />
+            </Link>
           ))}
         </div>
       </div>

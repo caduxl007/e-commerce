@@ -6,7 +6,7 @@ export function DefaultLayout() {
     <main>
       <Header />
 
-      <div className="bg-gray-500 px-4 min-h-[calc(100vh-80px)]">
+      <div className="flex min-h-[calc(100vh-80px)] bg-gray-500 px-4">
         <Outlet />
       </div>
     </main>
