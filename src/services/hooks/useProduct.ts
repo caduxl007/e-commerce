@@ -10,7 +10,7 @@ type GetUsersRequest = {
   id: number;
 };
 
-export async function getProducts({
+export async function getProduct({
   id,
 }: GetUsersRequest): Promise<GetUsersResponse> {
   const { data } = await api.get(`products/${id}`);
@@ -24,8 +24,8 @@ export async function getProducts({
 
 export function useProduct(request: GetUsersRequest) {
   return useQuery<GetUsersResponse>(
-    ['products', request.id],
-    () => getProducts(request),
+    ['product', request.id],
+    () => getProduct(request),
     {
       staleTime: 1000 * 60, // 1 minuto
     },

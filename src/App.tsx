@@ -3,15 +3,19 @@ import { Router } from './Router';
 import { QueryClientProvider } from 'react-query';
 import { ReactQueryDevtools } from 'react-query/devtools';
 import { queryClient } from './lib/queryClient';
+import { Provider } from 'react-redux';
+import { store } from './store';
 
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
-      <BrowserRouter>
-        <Router />
-      </BrowserRouter>
+      <Provider store={store}>
+        <BrowserRouter>
+          <Router />
+        </BrowserRouter>
 
-      <ReactQueryDevtools />
+        <ReactQueryDevtools />
+      </Provider>
     </QueryClientProvider>
   );
 }

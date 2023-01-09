@@ -1,7 +1,6 @@
-import { ShoppingBagOpen } from 'phosphor-react';
-
 import logo from '../../assets/logo.svg';
 import { InputText } from '../InputText';
+import { Shopping } from './Shopping';
 
 export function Header() {
   return (
@@ -11,9 +10,7 @@ export function Header() {
       <div className="flex items-center gap-7">
         <InputText placeholder="Procurando por algo específico?" />
 
-        <div>
-          <ShoppingBagOpen size={20} />
-        </div>
+        <Shopping />
       </div>
     </header>
   );

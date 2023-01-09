@@ -1,12 +1,14 @@
 import { ArrowCircleLeft, ShoppingBagOpen } from 'phosphor-react';
+import { useDispatch } from 'react-redux';
 import { Link, useParams } from 'react-router-dom';
-import { Button } from '../../components';
-import { Loading } from '../../components/Loading';
+import { Button, Loading } from '../../components';
 import { useProduct } from '../../services/hooks/useProduct';
+import { add } from '../../store/modules/cart';
 import { formatterPrice } from '../../utils/formatter-price';
 
 export function PageProduct() {
   const { id } = useParams<{ id: string }>();
+  const dispatch = useDispatch();
 
   if (!id) {
     return <div />;
@@ -18,6 +20,13 @@ export function PageProduct() {
 
   if (isLoading) {
     return <Loading />;
+  }
+
+  function handleSelectProduct() {
+    console.log(data?.product);
+    if (data?.product.id) {
+      dispatch(add(data?.product));
+    }
   }
 
   return (
@@ -62,7 +71,10 @@ export function PageProduct() {
                 </p>
               </div>
 
-              <Button className="mt-auto max-w-md bg-blue-600">
+              <Button
+                onClick={handleSelectProduct}
+                className="mt-auto max-w-md bg-blue-600"
+              >
                 <ShoppingBagOpen size={20} />
                 Adicionar ao carrinho
               </Button>

@@ -40,7 +40,11 @@ export async function getProducts({
 }
 
 export function useProducts(request: GetUsersRequest) {
-  return useQuery(['products', request], () => getProducts(request), {
-    staleTime: 1000 * 60, // 1 minuto
-  });
+  return useQuery<GetUsersResponse>(
+    ['products', request],
+    () => getProducts(request),
+    {
+      staleTime: 1000 * 60 * 60, // 1 minuto
+    },
+  );
 }
